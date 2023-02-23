@@ -1,0 +1,29 @@
+{
+  "name": "sp2-auction",
+  "version": "1.0.0",
+  "description": "This is my SP2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css & live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KennTorg/SP2-Auction.git"
+  },
+  "keywords": [],
+  "author": "KennTorg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KennTorg/SP2-Auction/issues"
+  },
+  "homepage": "https://github.com/KennTorg/SP2-Auction#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.58.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
