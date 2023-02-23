@@ -13,8 +13,8 @@
     ></script>
     <script src="/src/js/index.mjs" type="module" defer></script>
     <link rel="stylesheet" href="/dist/css/styles.css" />
-    <link rel="icon" href="data:,">
-    <title>Home || Auction</title>
+    <link rel="icon" href="data:," />
+    <title>Login || Auction</title>
   </head>
   <body>
     <!-- HEADER-->
@@ -39,16 +39,19 @@
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="profile-link" href="/pages/profile">Profile</a>
+                <a class="nav-link" id="profile-link" href="/pages/profile"
+                  >Profile</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="login-link" href="/pages/auth/login">Login</a>
+                <a class="nav-link" id="login-link" href="/pages/auth/login"
+                  >Login</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="logout-link" href="/">Logout</a>
               </li>
             </ul>
-            <!-- SEARCH FORM -->
             <form class="d-flex" role="search">
               <input
                 class="form-control me-1"
@@ -63,21 +66,45 @@
           </div>
         </div>
       </nav>
-      <div class="header-image">
-        <img
-          src="https://cdn.pixabay.com/photo/2017/07/31/14/56/wall-2558279__340.jpg"
-          alt="the gallery"
-        />
-      </div>
     </header>
-    <!-- MAIN -->
     <main>
-      <!-- LISTINGS -->
-      <div>
-        <h3 style="text-align: center;">LISTINGS</h4>
-      </div>
-      <div class="listings" id="homeListings">
-        
+      <!--LOGIN FORM -->
+      <div class="container card col-lg-4 shadow mt-5">
+        <form id="loginForm">
+          <!-- Email input -->
+          <div class="form-outline mb-4 pt-4">
+            <input
+              required
+              name="email"
+              type="email"
+              id="email"
+              class="form-control"
+            />
+            <label class="form-label" for="email">Email</label>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <input
+              required
+              name="password"
+              type="password"
+              id="password"
+              class="form-control"
+            />
+            <label class="form-label" for="password">Password</label>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary btn-block mb-4">
+            Sign in
+          </button>
+
+          <!-- Register button -->
+          <div class="text-center">
+            <p>Not a member yet? <a href="/pages/auth/register">Register</a></p>
+          </div>
+        </form>
       </div>
     </main>
   </body>
