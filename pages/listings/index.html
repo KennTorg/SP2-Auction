@@ -12,7 +12,7 @@
     <script src="/src/js/index.mjs" type="module" defer></script>
     <link rel="stylesheet" href="/dist/css/styles.css" />
     <link rel="icon" href="data:," />
-    <title>Register || Auction</title>
+    <title>Single Listing || Auction</title>
   </head>
   <body>
     <!-- HEADER-->
@@ -66,66 +66,11 @@
       </nav>
     </header>
     <main>
-      <!--REGISTER FORM -->
-      <div class="container card col-lg-4 shadow mt-5">
-        <form id="registerForm">
-          <!--Name Input-->
-          <div class="form-outline mb-4 pt-4">
-            <input
-              name="name"
-              type="name"
-              id="name"
-              class="form-control"
-              required
-              pattern="^[\w]+$"
-              title="User name must only contain lower case and upper case letters, numbers and underscore(_). Example: My_user1234"
-            />
-            <label class="form-label" for="name">Name</label>
-          </div>
-          <!-- Email input -->
-          <div class="form-outline mb-4">
-            <input
-              name="email"
-              type="email"
-              id="email"
-              class="form-control"
-              required
-              pattern="^[\w\-.]+@(stud.)?noroff.no$"
-              title="Only @(stud.)noroff.no domains are allowed to register."
-            />
-            <label class="form-label" for="email">Email</label>
-          </div>
-
-          <!-- Password input -->
-          <div class="form-outline mb-4">
-            <input
-              name="password"
-              type="password"
-              id="password"
-              class="form-control"
-              required
-              minlength="8"
-            />
-            <label class="form-label" for="password">Password</label>
-          </div>
-
-          <!-- Avatar -->
-          <div class="form-outline mb-4">
-            <input name="avatar" type="url" id="avatar" class="form-control" />
-            <label class="form-label" for="avatar">Avatar</label>
-          </div>
-
-          <!-- Submit button -->
-          <button type="submit" class="btn btn-primary btn-block mb-4">
-            Register
-          </button>
-
-          <!-- Login? button -->
-          <div class="text-center">
-            <p>Go to <a href="/pages/auth/login">Login</a></p>
-          </div>
-        </form>
-      </div>
+      <h1 class="single-header text-center">SINGLE LISTING</h1>
+      <div
+        class="container-fluid d-flex justify-content-center"
+        id="single-listing"
+      ></div>
     </main>
   </body>
 </html>
