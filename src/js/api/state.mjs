@@ -6,6 +6,7 @@ import { load } from "../storage/index.mjs";
 //==========================================
 
 // Displays or not login/logout/profile pages
+
 export function userState() {
   const token = load("token");
   const loginLink = document.getElementById("login-link");
