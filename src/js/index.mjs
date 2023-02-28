@@ -28,4 +28,5 @@ if (path === "/pages/auth/login/") {
 } else if (path === "/pages/listings/") {
   listings.singleListing();
   state.userState();
+  listeners.setPlaceBidListener();
 }
