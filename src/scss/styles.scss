@@ -1,9 +1,5 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-@import "./components//listingcard";
+@import "../scss/components/home";
+@import "../scss/components/profile";
 
-.header-image img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-}

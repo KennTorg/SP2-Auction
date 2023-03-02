@@ -1,0 +1,45 @@
+// Profile Cards
+
+.profile-card {
+  width: 14rem;
+  height: 22rem;
+  border: none;
+  color: black;
+}
+
+.profile-card img {
+  width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.profile-a-tag {
+  text-decoration: none;
+}
+
+.banner {
+  background-image: url("https://images.pexels.com/photos/450055/pexels-photo-450055.jpeg?auto=compress&cs=tinysrgb&w=400");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+/*.profile-column {
+  height: 800px;
+}*/
+
+.avatar-image {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 100px;
+  margin-left: 15px;
+}
+
+.avatar-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
