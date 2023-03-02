@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is my SP2 Auction site"/>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
@@ -11,7 +12,7 @@
     ></script>
     <script src="/src/js/index.mjs" type="module" defer></script>
     <link rel="stylesheet" href="/dist/css/styles.css" />
-    <link rel="icon" href="data:,">
+    <link rel="icon" href="data:," />
     <title>Home || Auction</title>
   </head>
   <body>
@@ -32,9 +33,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <h1 class="logo">OAH!</h1>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="profile-link" href="/pages/profile">Profile</a>
@@ -46,75 +48,77 @@
                 <a class="nav-link" id="logout-link" href="/">Logout</a>
               </li>
             </ul>
-            <!-- SEARCH FORM -->
-            <form class="d-flex" role="search" id="searchForm">
-              <input
-                class="form-control me-1"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                id="search"
-              />
-              <button class="btn btn-outline-secondary" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>
-      <div class="header-image">
-        <img
-          src="https://cdn.pixabay.com/photo/2017/07/31/14/56/wall-2558279__340.jpg"
-          alt="the gallery"
-        />
+      <div class="welcome-container d-flex flex-column text-center">
+        <h1 class="m-5">Welcome to Online Auction House!</h1>
+        <p>Here you can have a lot of fun, list and bid on items,<br> 
+            login and logout as much as you want.</p>
       </div>
     </header>
     <!-- MAIN -->
     <main>
       <!-- CREATE LISTING -->
-      <div class="column-2 just">
-        <div class="p-3 bg-white shadow rounded d-flex justify-content-center">
-            <div class="listing-container">
-
+      <div class="column-2">
+        <div class="d-flex justify-content-center p-3" id="create-form-section">
+            <div class="listing-container col-6 shadow m-5 p-3 rounded">
                 <form id="create-listing">
-                    <div class="form-group mb-3">
+                  <h3 class="text-center p-2">List an item:</h3>
+                    <div class="form-group">
                         <label for="title">Title</label>
-                        <input class="form-control" type="text" name="title" required>
+                        <input class="form-control" type="text" name="title" placeholder="What are you listing?" required>
                     </div>
 
-                    <div class="form-group mb-3">
+                    <div class="form-group">
                         <label for="body">Body</label>
-                        <textarea class="form-control" name="body" required></textarea>
+                        <textarea class="form-control" name="body" placeholder="Describe the item" required></textarea>
                     </div>
 
-                    <div class="form-group mb-3">
+                    <div class="form-group">
                         <label for="tags">Tags</label>
                         <input class="form-control" type="text" name="tags">
                     </div>
 
-                    <div class="form-group mb-3">
+                    <div class="form-group">
                         <label for="media">Media</label>
-                        <input class="form-control" type="url" name="media">
+                        <input class="form-control" type="url" name="media" placeholder="Image URL">
                     </div>
 
-                    <div class="form-group mb-3">
+                    <div class="form-group">
                       <label for="endsAt">Listing ends at</label>
-                      <input class="form-control bg-secondary text-light" type="datetime-local" id="bid-endsAt" name="endsAt" required/> 
+                      <input class="form-control" type="datetime-local" id="bid-endsAt" name="endsAt" required/> 
                     </div>
                     
-                    <button class="btn btn-primary">Create Listing</button>
+                    <button class="btn btn-primary mt-3" id="create-button">List Item</button>
                 </form>
             </div>
         </div>
-      <!-- LISTINGS -->
+
       <section>
-        <!-- MAKE CHANGES HERE -->
+        <!-- SEARCH FORM -->
+        <div class="d-flex justify-content-center m-3">
+          <form class="form-outline col-6" role="search" id="searchForm">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search for listings"
+              aria-label="Search"
+              id="search"
+            />
+          </form>
+        </div>
+        <!-- LISTINGS -->
         <div>
-          <h3 style="text-align: center;">LISTINGS</h4>
+          <h3 class="text-center m-3 border-bottom p-3 text-muted">LISTINGS</h4>
         </div>
         <div class="d-flex flex-wrap justify-content-center" id="listings">
         </div>
       </section>
     </main>
+    <!-- FOOTER -->
+    <footer class="py-3 my-4">
+      <p class="text-center text-muted border-top p-5">&copy; 2023 Online Auction House! | KennTorg</p>
+    </footer>
   </body>
 </html>
