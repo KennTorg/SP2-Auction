@@ -1,18 +1,19 @@
 export function singleListingTemplate(listingData) {
   const { title, media, description, bids, endsAt } = listingData;
 
-  // SINGLE LISTING HEADER
+  /* SINGLE LISTING HEADER
   const pageHeader = document.querySelector(".single-header");
   pageHeader.innerText = title;
-  pageHeader.classList = "m-auto text-center mt-5 text-wrap text-break";
-
+  pageHeader.classList = "container-fluid m-auto text-center mt-3 text-wrap text-break";
+  */
   // SINGLE LISTING CARD
+
   const singleListingContainer = document.createElement("div");
   singleListingContainer.classList =
     "card d-flex flex-wrap m-auto p-3 justify-content-around";
 
   const containerImgEnds = document.createElement("div");
-  containerImgEnds.classList = "d-flex flex-column justify-content-center";
+  containerImgEnds.classList = "single-card d-flex flex-column justify-content-center";
 
   const carouselContainer = document.createElement("div");
   carouselContainer.classList = "itemImage m-auto carousel slide";
@@ -81,6 +82,11 @@ export function singleListingTemplate(listingData) {
 
   carouselContainer.append(carouselInner, slideButtonLeft, slideButtonRight);
 
+  const cardTitle = document.createElement("h4");
+  cardTitle.classList = "m-auto text-center mt-2 text-break";
+  cardTitle.innerText = title;
+
+
   const listingEnds = document.createElement("p");
   listingEnds.innerHTML =
     "Closes at:" + `<br>` + new Date(endsAt).toLocaleDateString();
@@ -101,7 +107,7 @@ export function singleListingTemplate(listingData) {
   listingDescription.append(descriptionText);
 
   const lastBid = document.createElement("button");
-  lastBid.classList = "btn btn-success btn-small";
+  lastBid.classList = "btn btn-secondary btn-small";
   lastBid.innerText = "No bids yet";
 
   if (bids) {

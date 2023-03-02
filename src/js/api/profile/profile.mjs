@@ -62,7 +62,7 @@ export async function profileInfo() {
       }
       userBids.innerHTML += `<a href="/pages/listings/?id=${
         bids[i].listing.id
-      }" class="btn btn-success m-2">
+      }" class="btn btn-secondary p-3 m-2">
       ${bids[i].listing.title} <br>
       Bid made: $${bids[i].amount} </br>
       Ends: ${new Date(bids[i].created).toLocaleDateString()}
@@ -91,17 +91,19 @@ export async function profileInfo() {
             />`
         : `<img 
         src="https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg?w=996" 
-        class="mb-2 card-img-top" 
+        class="mb-2" 
         alt="Image not found"`;
 
       profileListings.innerHTML += `
-            <a href="/pages/listings/?id=${listings[i].id}" class="small-card bg-secondary card m-3">
+            <a href="/pages/listings/?id=${listings[i].id}" class="profile-a-tag box-shadow card card m-3">
+            <div class="profile-card d-flex flex-column">
             ${image}
               <div class="d-flex flex-column p-3">
                 <div class="d-flex">
                   <h4>${listings[i].title}</h4>
                 </div>
                 <span>Closes at: <br> ${endsAt}</span>
+              </div>
               </div>
             </a>`;
     }
