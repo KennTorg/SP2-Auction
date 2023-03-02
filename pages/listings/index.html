@@ -54,13 +54,25 @@
           </div>
         </div>
       </nav>
-      <div>
+      <div class="d-flex flex-column">
+        <h1 class="single-header text-center">SINGLE LISTING DISPLAYS HERE</h1>
         <div
-          class="single-listing container-fluid d-flex justify-content-center"
+          class="container-fluid d-flex justify-content-center"
           id="single-listing"
         ></div>
+        <!-- Place Bids-->
+        <div>
+          <h3 class="text-center">Place a bid</h3>
+          <div class="d-flex justify-content-center">
+          <form class="form col-sm-1 justify-content-center" id="bid-form">
+            <input class="form-control mb-3  " name="amount" type="number"></input>
+            <button class="btn btn-primary" id="bid-button">Place bid</button>
+          </form>
+          </div>
+        </div>
       </div>
     </header>
-    <main></main>
-  </body>
+   </body>
 </html>
+
+

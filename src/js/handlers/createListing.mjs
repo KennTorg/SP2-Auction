@@ -31,6 +31,7 @@ export function setCreateListingListener() {
 
       // Sends it to the API
       createListing(listing);
+      location.reload();
     });
   }
 }
