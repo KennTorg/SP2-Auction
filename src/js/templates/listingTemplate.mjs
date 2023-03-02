@@ -4,13 +4,15 @@ export function listingTemplate(listingData) {
   // LISTING CARD
 
   const listingCard = document.createElement("a");
-  listingCard.classList = "card bg-dark m-3";
+  listingCard.classList =
+    "card-a-tag card box-shadow rounded mb-5 overflow-hidden m-3";
   listingCard.setAttribute("href", `/pages/listings/?id=${id}`);
 
   // CARD HEADER
 
   const cardHeader = document.createElement("div");
-  cardHeader.classList = "d-flex flex-column justify-content-center";
+  cardHeader.classList =
+    "listing-card d-flex flex-column justify-content-center";
 
   // Card Media
   const cardMedia = document.createElement("img");
@@ -22,7 +24,7 @@ export function listingTemplate(listingData) {
 
   // Card Title
   const listingTitle = document.createElement("h4");
-  listingTitle.classList = "m-auto text-center mt-2 text-break"; //<---- LOOK INTO THIS text-break
+  listingTitle.classList = "m-auto text-center mt-2 text-break";
   listingTitle.innerText = title;
 
   cardHeader.append(cardMedia, listingTitle);

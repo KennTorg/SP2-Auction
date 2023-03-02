@@ -12,12 +12,14 @@ export function userState() {
   const loginLink = document.getElementById("login-link");
   const logoutLink = document.getElementById("logout-link");
   const profileLink = document.getElementById("profile-link");
+  const createForm = document.getElementById("create-form-section");
 
   if (token) {
     loginLink.classList = "visually-hidden";
   } else {
     logoutLink.classList = "visually-hidden";
     profileLink.classList = "visually-hidden";
+    createForm.classList = "visually-hidden";
   }
 
   return;

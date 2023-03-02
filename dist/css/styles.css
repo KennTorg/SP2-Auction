@@ -10769,24 +10769,127 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.card {
-  width: 14rem;
-  height: 22rem;
-  text-decoration: none;
-  color: white;
-  border: none;
+header {
+  background-image: url("https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=400");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.card img {
+.navbar a,
+h1,
+.h1 {
+  color: white;
+}
+
+.navbar {
+  transition: 1.5 ease;
+}
+
+.welcome-container {
+  margin-top: 25vh;
+  color: white;
+}
+
+.listing-card {
+  width: 14rem;
+  height: 18rem;
+  border: none;
+  color: black;
+}
+
+.listing-card img {
   width: 100%;
   min-height: 200px;
   max-height: 200px;
   object-fit: cover;
 }
 
-.header-image img {
+.card-a-tag {
+  text-decoration: none;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0 3px 6px rgba(72, 78, 85, 0.6);
+  box-shadow: 0 3px 6px rgba(72, 78, 85, 0.6);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.box-shadow:hover {
+  -webkit-box-shadow: 0 15px 35px rgba(72, 78, 85, 0.6);
+  box-shadow: 0 15px 35px rgba(72, 78, 85, 0.6);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+/*
+.profile-card {
+  width: 14rem;
+  height: 22rem;
+  border: none;
+  color: black;
+}
+
+.profile-card img {
   width: 100%;
-  max-height: 400px;
+  min-height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.profile-card img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+*/
+.profile-card {
+  width: 14rem;
+  height: 22rem;
+  border: none;
+  color: black;
+}
+
+.profile-card img {
+  width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.profile-a-tag {
+  text-decoration: none;
+}
+
+.banner {
+  background-image: url("https://images.pexels.com/photos/450055/pexels-photo-450055.jpeg?auto=compress&cs=tinysrgb&w=400");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+/*.profile-column {
+  height: 800px;
+}*/
+.avatar-image {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 100px;
+  margin-left: 15px;
+}
+
+.avatar-image img {
+  width: 100%;
+  height: 150px;
   object-fit: cover;
 }
 

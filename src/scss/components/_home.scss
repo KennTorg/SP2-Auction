@@ -1,0 +1,63 @@
+// HEADER (for all pages)
+header {
+  background-image: url("https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=400");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar a,
+h1 {
+  color: white;
+}
+
+.navbar {
+  transition: 1.5 ease;
+}
+
+// Welcome home
+
+.welcome-container {
+  margin-top: 25vh;
+  color: white;
+}
+
+// Cards homeage
+.listing-card {
+  width: 14rem;
+  height: 18rem;
+  border: none;
+  color: black;
+}
+
+.listing-card img {
+  width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-a-tag {
+  text-decoration: none;
+}
+
+// Card Shadows
+.box-shadow {
+  -webkit-box-shadow: 0 3px 6px rgba(72, 78, 85, 0.6);
+  box-shadow: 0 3px 6px rgba(72, 78, 85, 0.6);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.box-shadow:hover {
+  -webkit-box-shadow: 0 15px 35px rgba(72, 78, 85, 0.6);
+  box-shadow: 0 15px 35px rgba(72, 78, 85, 0.6);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
