@@ -10,6 +10,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://kit.fontawesome.com/d3b18d85d7.js" crossorigin="anonymous"></script>
     <script src="/src/js/index.mjs" type="module" defer></script>
     <link rel="stylesheet" href="/dist/css/styles.css" />
     <link rel="icon" href="data:," />
@@ -33,6 +34,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <h1 class="logo">OAH!</h1>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="/">Home</a>
@@ -55,14 +57,14 @@
         </div>
       </nav>
       <div class="d-flex flex-column">
-        <h1 class="single-header text-center">SINGLE LISTING DISPLAYS HERE</h1>
+        <h1 class="single-header text-center"></h1>
         <div
           class="container-fluid d-flex justify-content-center"
           id="single-listing"
         ></div>
         <!-- Place Bids-->
-        <div>
-          <h3 class="text-center">Place a bid</h3>
+        <div id="place-bid-container">
+          <h3 class="text-center text-black">Place a bid</h3>
           <div class="d-flex justify-content-center">
           <form class="form col-sm-1 justify-content-center" id="bid-form">
             <input class="form-control mb-3  " name="amount" type="number"></input>
