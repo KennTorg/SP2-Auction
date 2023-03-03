@@ -27,6 +27,6 @@ if (path === "/pages/auth/login/") {
   profiles.changeAvatarRedirect();
 } else if (path === "/pages/listings/") {
   listings.singleListing();
-  state.userState();
+  state.isLoggedIn();
   listeners.setPlaceBidListener();
 }
